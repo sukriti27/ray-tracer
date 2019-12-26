@@ -1,0 +1,310 @@
+{
+	"nbounces": 3,
+	"camera": {
+		"type": "pinhole",
+		"width": 500,
+		"height": 500,
+		"fov": 130,
+		"lookfrom": [
+			0,
+			0,
+			0
+		],
+		"lookat": [
+			0,
+			0,
+			-1
+		],
+		"vup": [
+			0,
+			1,
+			0
+		],
+		"aperture": 0.025,
+		"focusdistance": 0.36
+	},
+	"scene": {
+		"backgroundcolor": [
+			0.5,
+			0.5,
+			0.5
+		],
+		"lightsources": [
+			{
+				"type": "pointlight",
+				"position": [
+					0.0,
+					-0.7,
+					-1.0
+				],
+				"intensity": [
+					1,
+					1,
+					1
+				]
+			}
+		],
+		"shapes": [
+			{
+				"type": "sphere",
+				"center": [
+					0.2,
+					0.35,
+					-0.7
+				],
+				"radius": 0.2,
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.01,
+					"kd": 0.9,
+					"specularexponent": 9,
+					"texture": "../core/earthmap1.jpg"
+				}
+			},
+			{
+				"type": "sphere",
+				"center": [
+					0,
+					-0.25,
+					-0.8
+				],
+				"radius": 0.2,
+				"material": {
+					"type": "transparent",
+					"refractiveindex": 1.5
+				}
+			},
+			{
+				"type": "sphere",
+				"center": [
+					0.15,
+					-0.25,
+					-0.5
+				],
+				"radius": 0.14,
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.01,
+					"kd": 0.9,
+					"specularexponent": 9,
+					"diffusecolor": [
+						0.0,
+						0.0,
+						0.7
+					]
+				}
+			},
+			{
+				"type": "sphere",
+				"center": [
+					0.2,
+					-0.25,
+					-0.3
+				],
+				"radius": 0.09,
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.01,
+					"kd": 0.9,
+					"specularexponent": 5,
+					"diffusecolor": [
+						0.7,
+						0.1,
+						0.1
+					]
+				}
+			},
+			{
+				"type": "sphere",
+				"center": [
+					0,
+					-1000.5,
+					-1.0
+				],
+				"radius": 1000,
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.0,
+					"kd": 1.0,
+					"specularexponent": 3,
+					"diffusecolor": [
+						0.3,
+						0.3,
+						0.3
+					]
+				}
+			},
+			{
+				"type": "rectangleXY",
+				"x0": -0.7,
+				"x1": -0.4,
+				"y0": -0.6,
+				"y1": -0.2,
+				"z": -0.4,
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.0,
+					"kd": 1.0,
+					"specularexponent": 3,
+					"texture": "../core/wall.jpg",
+					"diffusecolor": [
+						0.9,
+						0.9,
+						0.1
+					]
+				}
+			},
+			{
+				"type": "triangle",
+				"v1": [
+					-3.0,
+					-0.1,
+					-2.3
+				],
+				"v2": [
+					0.0,
+					-0.1,
+					-2.0
+				],
+				"v3": [
+					-1.0,
+					1.5,
+					-2.0
+				],
+				"uv1": [
+					0.5,
+					0.1
+				],
+				"uv2": [
+					0.1,
+					0.9
+				],
+				"uv3": [
+					0.9,
+					0.9
+				],
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.0,
+					"kd": 1.0,
+					"specularexponent": 3,
+					"texture": "../core/pyramid.jpg",
+					"diffusecolor": [
+						0.1,
+						0.9,
+						0.3
+					]
+				}
+			},
+			{
+				"type": "triangle",
+				"v1": [
+					0.0,
+					-0.1,
+					-2.0
+				],
+				"v2": [
+					0.5,
+					-0.1,
+					-3.0
+				],
+				"v3": [
+					-1.0,
+					1.5,
+					-2.0
+				],
+				"uv1": [
+					0.5,
+					0.1
+				],
+				"uv2": [
+					0.1,
+					0.9
+				],
+				"uv3": [
+					0.9,
+					0.9
+				],
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.0,
+					"kd": 1.0,
+					"specularexponent": 4,
+					"texture": "../core/pyramid.jpg",
+					"diffusecolor": [
+						0.1,
+						0.5,
+						0.3
+					]
+				}
+			},
+			{
+				"type": "triangleMesh",
+				"faceindex": [
+					3,
+					3
+				],
+				"vertexindex": [
+					0,
+					1,
+					2,
+					1,
+					3,
+					2
+				],
+				"vertices": [
+					[
+						2.5,
+						-0.1,
+						-2.3
+					],
+					[
+						4,
+						-0.2,
+						-2.0
+					],
+					[
+						3,
+						0.8,
+						-2.0
+					],
+					[
+						6.2,
+						-0.2,
+						-3.0
+					]
+				],
+				"texturemap": [
+					[
+						0.5,
+						0.1
+					],
+					[
+						0.1,
+						0.9
+					],
+					[
+						0.9,
+						0.9
+					],
+					[
+						0.5,
+						0.1
+					]
+				],
+				"material": {
+					"type": "blinnphong",
+					"ks": 0.0,
+					"kd": 1.0,
+					"specularexponent": 4,
+					"texture": "../core/pyramid.jpg",
+					"diffusecolor": [
+						0.1,
+						0.5,
+						0.3
+					]
+				}
+			}
+		]
+	}
+}
